@@ -3,7 +3,7 @@ let cost;
 const shipping = prompt ('Выбери страну доставки');
 
 
-const country = shipping; 
+const country = shipping.charAt(0).toUpperCase() + shipping.substr(1).toLowerCase(); 
 
 
 
