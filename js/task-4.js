@@ -8,7 +8,7 @@ droidNumber = Number (droidNumber);
 const totalPrice = droidNumber * pricePerDroid;
 const creditAmount = credit - totalPrice;
 
-if (droidNumber === null){
+if (!droidNumber){
     message = 'Canceled'
     console.log(message); 
 }else if(droidNumber < 1){
