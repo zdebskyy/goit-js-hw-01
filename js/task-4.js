@@ -13,7 +13,7 @@ if (droidNumber === null){
     console.log(message); 
 }else if(droidNumber < 1){
     message = 'Wrong value'
-    console.log(message);    
+    console.log(message);     
 }else if(totalPrice > credit){
     message = 'Not enougth money'
     console.log(message);
