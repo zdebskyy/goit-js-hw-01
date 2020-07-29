@@ -6,51 +6,35 @@ const shipping = prompt ('Выбери страну доставки');
 const country = shipping.charAt(0).toUpperCase() + shipping.substr(1).toLowerCase(); 
 
 
-
 switch (country) {
   
     case 'Китай':
       cost = 100;
-      console.log(`Доставка в ${country} будет стоить ${cost} кредитов`);
+      message = `Доставка в ${country} будет стоить ${cost} кредитов`;
       break;
   
     case 'Чили':
       cost = 250;
-      console.log(`Доставка в ${country} будет стоить ${cost} кредитов`);
+      message = `Доставка в ${country} будет стоить ${cost} кредитов`;
       break;
   
     case 'Австралия':
       cost = 170;
-      console.log(`Доставка в ${country} будет стоить ${cost} кредитов`);
+      message = `Доставка в ${country} будет стоить ${cost} кредитов`;
       break;
 
       case 'Индия':
       cost = 80;
-      console.log(`Доставка в ${country} будет стоить ${cost} кредитов`);
+      message = `Доставка в ${country} будет стоить ${cost} кредитов`;
       break;
 
       case 'Ямайка':
       cost = 120;
-      console.log(`Доставка в ${country} будет стоить ${cost} кредитов`);
+      message = `Доставка в ${country} будет стоить ${cost} кредитов`;
       break;
-
-      case null:
-        message = 'Canceled';
-        console.log(message);
-        break;
   
     default:
       alert ('В вашей стране доставка не доступна');
   }
+  console.log(message);
 
-
-
-// const name = 'alex';
-
-// const userInput = prompt ('my name?');
-
-// console.log(userInput)
-
-// const nomalizedInput = userInput.toLowerCase();
-
-// console.log(name === nomalizedInput);
